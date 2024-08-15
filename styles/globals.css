@@ -1,0 +1,223 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #2b2b2b 0%, #121212 100%);
+    color: #f5f5f5;
+}
+
+button.btn {
+    margin-right: 8px; /* Add some space between buttons */
+}
+
+button.btn:last-child {
+    margin-right: 0; /* Remove the right margin from the last button */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1.dark {
+    color: #f5f5f5;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2.dark {
+    color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 23%;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card.dark {
+    background: #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input fields */
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.card-title.dark {
+    color: #1e90ff;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card-text.dark {
+    color: #ddd;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #138496;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.btn-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.btn-toggle:hover {
+    color: #0056b3;
+}
+
+.btn-toggle.dark {
+    color: #1e90ff;
+}
+
+.add-book-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.add-book-button:hover {
+    background-color: #218838;
+}
+
+.add-book-button.dark {
+    background-color: #1e7e34;
+}
+
+.btn-toggle svg {
+    width: 24px;
+    height: 24px;
+    color: #000000; /* Ensure color matches the fill */
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-toggle:hover svg {
+    transform: rotate(20deg);
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #4f73b6, #2c6bb3); /* Gradient background */
+    color: white;
+}
+
+.header h1 {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(22, 17, 17, 0.7); /* Text shadow for depth */
+    margin-bottom: 10px;
+}
+
+/* Quote or subtitle */
+.header p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d1d1d1;
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* Adjust for responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    .add-book-btn {
+        width: 100%;
+    }
+}
